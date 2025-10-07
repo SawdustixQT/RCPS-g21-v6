@@ -1,0 +1,21 @@
+{
+	"operations": {
+		"load": {
+			"id": 10,
+			"address": int,
+			"const": int,
+		},
+		"read": {
+			"id": 37,
+			"address": int
+			
+		},
+		"write": {
+			"id": 83
+			"address": int
+		},
+		"bin_op": {
+			"id": 111
+		}
+	}
+}
