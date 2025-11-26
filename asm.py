@@ -2,13 +2,13 @@ import json
 import argparse
 import os.path
 
-from fontTools.varLib.instancer import parseArgs
 
 def bin_as_hex(bin_str: bin):
     return  ', '.join(f'0x{byte:02X}' for byte in bin_str)
 
-def test(program):
-    print(f'Внутренне представление ассемблированной программы: \n{program}')
+def test(program, program_bin):
+
+    print(f'Результат ассемблирования в байтовом формате: {bin_as_hex(program_bin)}')
 
     assert load(13, 508) == b'\x8a\xe6\x0f\x00'
     assert read(934, 14) == b'%\xd3\x01\x00\x0e'
@@ -69,6 +69,18 @@ def asm_read_file(input_file_name):
     except FileNotFoundError:
         print("Файл не найден")
 
+def asm(cmd: dict):
+    """ Преобразование команды в двоичное представление """
+    op = cmd['op']
+    vals = cmd['values']
+    return eval(op)(*vals)
+
+def write_bin(program):
+    """ Преобразование программы в двоичное представление """
+    program_bin = b""
+    for cmd in program:
+        program_bin += asm(cmd)
+    return program_bin
 
 def main():
     parser = argparse.ArgumentParser(description="АСМ ИКБО-21-22 вариант 6")
@@ -79,11 +91,17 @@ def main():
     args, _ok = validate_args(args)
 
     program = asm_read_file(args.i)
+    program_bin = write_bin(program)
+    # Запись ассемблирования в двоичный выходной файл
+    with open(args.o, "wb") as file:
+        file.write(program_bin)
+        file.close()
 
     if args.t:
-        test(program)
+        test(program, program_bin)
     print(f'Инструкции программы: {program}')
+    # Размер двоичного файла в байтах
+    print(f'Размер бинарного файла программы: {os.path.getsize(args.o)} байт')
 
 main()
-
 
