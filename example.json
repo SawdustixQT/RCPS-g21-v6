@@ -6,20 +6,25 @@
         "description": "",
         "instructions": [
 		{
-			"op": "load",
-			"values": [13, 508]
+			"op": "LOAD",
+			"reg_addr": 13,
+			"const": 508
 		},
 		{
-			"op": "read",
-			"values": [934, 14]
+			"op": "READ",
+			"mem_addr": 934,
+			"reg_addr": 14
 		},
 		{
-			"op": "write",
-			"values": [13, 6, 7]
+			"op": "WRITE",
+			"base_reg_addr": 13,
+			"reg_addr": 6,
+			"offset": 7
 		},
 		{
-			"op": "bin_op",
-			"values": [6, 4]
+			"op": "BIN_OP",
+			"base_reg_addr": 6,
+			"acc_reg_addr": 4
 		}
 		]
     }
