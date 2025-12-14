@@ -1,0 +1,484 @@
+{
+    "dump": [
+        {
+            "address": 300,
+            "value": 0
+        },
+        {
+            "address": 301,
+            "value": 0
+        },
+        {
+            "address": 302,
+            "value": 0
+        },
+        {
+            "address": 303,
+            "value": 0
+        },
+        {
+            "address": 304,
+            "value": 0
+        },
+        {
+            "address": 305,
+            "value": 0
+        },
+        {
+            "address": 306,
+            "value": 0
+        },
+        {
+            "address": 307,
+            "value": 0
+        },
+        {
+            "address": 308,
+            "value": 0
+        },
+        {
+            "address": 309,
+            "value": 0
+        },
+        {
+            "address": 310,
+            "value": 0
+        },
+        {
+            "address": 311,
+            "value": 0
+        },
+        {
+            "address": 312,
+            "value": 0
+        },
+        {
+            "address": 313,
+            "value": 0
+        },
+        {
+            "address": 314,
+            "value": 0
+        },
+        {
+            "address": 315,
+            "value": 0
+        },
+        {
+            "address": 316,
+            "value": 0
+        },
+        {
+            "address": 317,
+            "value": 0
+        },
+        {
+            "address": 318,
+            "value": 0
+        },
+        {
+            "address": 319,
+            "value": 0
+        },
+        {
+            "address": 320,
+            "value": 0
+        },
+        {
+            "address": 321,
+            "value": 0
+        },
+        {
+            "address": 322,
+            "value": 0
+        },
+        {
+            "address": 323,
+            "value": 0
+        },
+        {
+            "address": 324,
+            "value": 0
+        },
+        {
+            "address": 325,
+            "value": 0
+        },
+        {
+            "address": 326,
+            "value": 0
+        },
+        {
+            "address": 327,
+            "value": 0
+        },
+        {
+            "address": 328,
+            "value": 0
+        },
+        {
+            "address": 329,
+            "value": 0
+        },
+        {
+            "address": 330,
+            "value": 0
+        },
+        {
+            "address": 331,
+            "value": 0
+        },
+        {
+            "address": 332,
+            "value": 0
+        },
+        {
+            "address": 333,
+            "value": 0
+        },
+        {
+            "address": 334,
+            "value": 0
+        },
+        {
+            "address": 335,
+            "value": 0
+        },
+        {
+            "address": 336,
+            "value": 0
+        },
+        {
+            "address": 337,
+            "value": 0
+        },
+        {
+            "address": 338,
+            "value": 0
+        },
+        {
+            "address": 339,
+            "value": 0
+        },
+        {
+            "address": 340,
+            "value": 0
+        },
+        {
+            "address": 341,
+            "value": 0
+        },
+        {
+            "address": 342,
+            "value": 0
+        },
+        {
+            "address": 343,
+            "value": 0
+        },
+        {
+            "address": 344,
+            "value": 0
+        },
+        {
+            "address": 345,
+            "value": 0
+        },
+        {
+            "address": 346,
+            "value": 0
+        },
+        {
+            "address": 347,
+            "value": 0
+        },
+        {
+            "address": 348,
+            "value": 0
+        },
+        {
+            "address": 349,
+            "value": 0
+        },
+        {
+            "address": 350,
+            "value": 0
+        },
+        {
+            "address": 351,
+            "value": 0
+        },
+        {
+            "address": 352,
+            "value": 0
+        },
+        {
+            "address": 353,
+            "value": 0
+        },
+        {
+            "address": 354,
+            "value": 0
+        },
+        {
+            "address": 355,
+            "value": 0
+        },
+        {
+            "address": 356,
+            "value": 0
+        },
+        {
+            "address": 357,
+            "value": 0
+        },
+        {
+            "address": 358,
+            "value": 0
+        },
+        {
+            "address": 359,
+            "value": 0
+        },
+        {
+            "address": 360,
+            "value": 0
+        },
+        {
+            "address": 361,
+            "value": 0
+        },
+        {
+            "address": 362,
+            "value": 0
+        },
+        {
+            "address": 363,
+            "value": 0
+        },
+        {
+            "address": 364,
+            "value": 0
+        },
+        {
+            "address": 365,
+            "value": 0
+        },
+        {
+            "address": 366,
+            "value": 0
+        },
+        {
+            "address": 367,
+            "value": 0
+        },
+        {
+            "address": 368,
+            "value": 0
+        },
+        {
+            "address": 369,
+            "value": 0
+        },
+        {
+            "address": 370,
+            "value": 0
+        },
+        {
+            "address": 371,
+            "value": 0
+        },
+        {
+            "address": 372,
+            "value": 0
+        },
+        {
+            "address": 373,
+            "value": 0
+        },
+        {
+            "address": 374,
+            "value": 0
+        },
+        {
+            "address": 375,
+            "value": 0
+        },
+        {
+            "address": 376,
+            "value": 0
+        },
+        {
+            "address": 377,
+            "value": 0
+        },
+        {
+            "address": 378,
+            "value": 0
+        },
+        {
+            "address": 379,
+            "value": 0
+        },
+        {
+            "address": 380,
+            "value": 0
+        },
+        {
+            "address": 381,
+            "value": 0
+        },
+        {
+            "address": 382,
+            "value": 0
+        },
+        {
+            "address": 383,
+            "value": 0
+        },
+        {
+            "address": 384,
+            "value": 0
+        },
+        {
+            "address": 385,
+            "value": 0
+        },
+        {
+            "address": 386,
+            "value": 0
+        },
+        {
+            "address": 387,
+            "value": 0
+        },
+        {
+            "address": 388,
+            "value": 0
+        },
+        {
+            "address": 389,
+            "value": 0
+        },
+        {
+            "address": 390,
+            "value": 0
+        },
+        {
+            "address": 391,
+            "value": 0
+        },
+        {
+            "address": 392,
+            "value": 0
+        },
+        {
+            "address": 393,
+            "value": 0
+        },
+        {
+            "address": 394,
+            "value": 0
+        },
+        {
+            "address": 395,
+            "value": 0
+        },
+        {
+            "address": 396,
+            "value": 0
+        },
+        {
+            "address": 397,
+            "value": 0
+        },
+        {
+            "address": 398,
+            "value": 0
+        },
+        {
+            "address": 399,
+            "value": 0
+        },
+        {
+            "address": 400,
+            "value": true
+        },
+        {
+            "address": 401,
+            "value": 0
+        },
+        {
+            "address": 402,
+            "value": 0
+        },
+        {
+            "address": 403,
+            "value": 0
+        },
+        {
+            "address": 404,
+            "value": true
+        },
+        {
+            "address": 405,
+            "value": 0
+        },
+        {
+            "address": 406,
+            "value": 0
+        },
+        {
+            "address": 407,
+            "value": 0
+        },
+        {
+            "address": 408,
+            "value": true
+        },
+        {
+            "address": 409,
+            "value": 0
+        },
+        {
+            "address": 410,
+            "value": 0
+        },
+        {
+            "address": 411,
+            "value": 0
+        },
+        {
+            "address": 412,
+            "value": 0
+        },
+        {
+            "address": 413,
+            "value": 0
+        },
+        {
+            "address": 414,
+            "value": 0
+        },
+        {
+            "address": 415,
+            "value": 0
+        },
+        {
+            "address": 416,
+            "value": 0
+        },
+        {
+            "address": 417,
+            "value": 0
+        },
+        {
+            "address": 418,
+            "value": 0
+        },
+        {
+            "address": 419,
+            "value": 0
+        }
+    ]
+}

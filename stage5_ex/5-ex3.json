@@ -1,0 +1,93 @@
+{
+    "program": {
+        "name": "Filter Positive Numbers",
+        "architecture": "УВМ",
+        "os": "Нет",
+        "description": "Проверяет, какие элементы массива (адреса 300-311) положительные. Результат - массив флагов (0/1) по адресам 400-411.",
+        "instructions": [
+            {
+                "op": "LOAD",
+                "reg_addr": 1,
+                "const": 300
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 2,
+                "const": 400
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 3,
+                "const": 0
+            },
+            {
+                "op": "READ",
+                "mem_addr": 1,
+                "reg_addr": 4
+            },
+            {
+                "op": "BIN_OP",
+                "base_reg_addr": 3,
+                "acc_reg_addr": 4
+            },
+            {
+                "op": "WRITE",
+                "base_reg_addr": 2,
+                "reg_addr": 4,
+                "offset": 0
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 5,
+                "const": 304
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 6,
+                "const": 404
+            },
+            {
+                "op": "READ",
+                "mem_addr": 5,
+                "reg_addr": 7
+            },
+            {
+                "op": "BIN_OP",
+                "base_reg_addr": 3,
+                "acc_reg_addr": 7
+            },
+            {
+                "op": "WRITE",
+                "base_reg_addr": 6,
+                "reg_addr": 7,
+                "offset": 0
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 8,
+                "const": 308
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 9,
+                "const": 408
+            },
+            {
+                "op": "READ",
+                "mem_addr": 8,
+                "reg_addr": 10
+            },
+            {
+                "op": "BIN_OP",
+                "base_reg_addr": 3,
+                "acc_reg_addr": 10
+            },
+            {
+                "op": "WRITE",
+                "base_reg_addr": 9,
+                "reg_addr": 10,
+                "offset": 0
+            }
+        ]
+    }
+}

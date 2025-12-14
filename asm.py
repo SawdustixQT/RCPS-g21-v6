@@ -66,6 +66,7 @@ def asm_read_file(input_file_name):
             return data['program']['instructions']
     except FileNotFoundError:
         print("Файл не найден")
+        raise FileNotFoundError("Файл не найден")
 
 def asm(commands: list):
     """ Внутреннее представление """

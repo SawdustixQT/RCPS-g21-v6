@@ -1,0 +1,65 @@
+{
+    "program": {
+        "name": "Find Minimum in Array",
+        "architecture": "УВМ",
+        "os": "Нет",
+        "description": "Находит минимальный элемент в массиве из 4 элементов (адреса 200-215). Результат сохраняется в registers[9].",
+        "instructions": [
+            {
+                "op": "LOAD",
+                "reg_addr": 1,
+                "const": 200
+            },
+            {
+                "op": "READ",
+                "mem_addr": 1,
+                "reg_addr": 10
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 2,
+                "const": 204
+            },
+            {
+                "op": "READ",
+                "mem_addr": 2,
+                "reg_addr": 4
+            },
+            {
+                "op": "BIN_OP",
+                "base_reg_addr": 10,
+                "acc_reg_addr": 4
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 3,
+                "const": 208
+            },
+            {
+                "op": "READ",
+                "mem_addr": 3,
+                "reg_addr": 5
+            },
+            {
+                "op": "BIN_OP",
+                "base_reg_addr": 10,
+                "acc_reg_addr": 5
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 4,
+                "const": 212
+            },
+            {
+                "op": "READ",
+                "mem_addr": 4,
+                "reg_addr": 6
+            },
+            {
+                "op": "BIN_OP",
+                "base_reg_addr": 10,
+                "acc_reg_addr": 6
+            }
+        ]
+    }
+}

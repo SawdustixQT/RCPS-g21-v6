@@ -66,7 +66,6 @@ def dump_memory(output_file, mem, start, end):
             row_dump["address"] = addr
             row_dump["value"] = mem[addr]
             mem_dump['dump'].append(row_dump)
-
         json.dump(mem_dump, file, ensure_ascii=False, indent=4)
 
 
@@ -88,7 +87,7 @@ def main():
 
     if args.r is not None:
         start, end = map(int, str(args.r).split('-'))
-        mem, reg = execute_asm(bytes_list, memory_size=end-start)
+        mem, reg = execute_asm(bytes_list, memory_size=end)
         mem_range = f'[{start}-{end}]'
         dump_memory(args.o, mem, start, end)
     else:

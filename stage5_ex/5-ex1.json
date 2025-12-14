@@ -1,0 +1,88 @@
+{
+    "program": {
+        "name": "",
+        "architecture": "",
+        "os": "",
+        "description": "Копирует 3 элемента из массива (адреса 500-511) в массив (адреса 600-611)",
+        "instructions": [
+            {
+                "op": "LOAD",
+                "reg_addr": 1,
+                "const": 500
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 2,
+                "const": 600
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 3,
+                "const": 512
+            },
+            {
+                "op": "READ",
+                "mem_addr": 1,
+                "reg_addr": 4
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 5,
+                "const": 0
+            },
+            {
+                "op": "BIN_OP",
+                "base_reg_addr": 5,
+                "acc_reg_addr": 4
+            },
+            {
+                "op": "WRITE",
+                "base_reg_addr": 2,
+                "reg_addr": 4,
+                "offset": 0
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 6,
+                "const": 4
+            },
+            {
+                "op": "READ",
+                "mem_addr": 6,
+                "reg_addr": 7
+            },
+            {
+                "op": "READ",
+                "mem_addr": 1,
+                "reg_addr": 8
+            },
+            {
+                "op": "BIN_OP",
+                "base_reg_addr": 7,
+                "acc_reg_addr": 8
+            },
+            {
+                "op": "WRITE",
+                "base_reg_addr": 1,
+                "reg_addr": 8,
+                "offset": 0
+            },
+            {
+                "op": "READ",
+                "mem_addr": 2,
+                "reg_addr": 9
+            },
+            {
+                "op": "BIN_OP",
+                "base_reg_addr": 7,
+                "acc_reg_addr": 9
+            },
+            {
+                "op": "WRITE",
+                "base_reg_addr": 2,
+                "reg_addr": 9,
+                "offset": 0
+            }
+        ]
+    }
+}

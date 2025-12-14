@@ -1,0 +1,61 @@
+{
+    "program": {
+        "name": "",
+        "architecture": "",
+        "os": "",
+        "description": "Выполние операции '<=' над вектором из 5 элементов и числом 73. Результат (0 или 1) записывается на место исходных элементов вектора.",
+        "instructions": [
+            {
+                "op": "LOAD",
+                "reg_addr": 1,
+                "const": 1000
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 2,
+                "const": 1020
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 3,
+                "const": 73
+            },
+            {
+                "op": "READ",
+                "mem_addr": 1,
+                "reg_addr": 4
+            },
+            {
+                "op": "BIN_OP",
+                "base_reg_addr": 3,
+                "acc_reg_addr": 4
+            },
+            {
+                "op": "WRITE",
+                "base_reg_addr": 1,
+                "reg_addr": 4,
+                "offset": 0
+            },
+            {
+                "op": "LOAD",
+                "reg_addr": 5,
+                "const": 4
+            },
+            {
+                "op": "BIN_OP",
+                "base_reg_addr": 5,
+                "acc_reg_addr": 1
+            },
+            {
+                "op": "READ",
+                "mem_addr": 1,
+                "reg_addr": 6
+            },
+            {
+                "op": "BIN_OP",
+                "base_reg_addr": 2,
+                "acc_reg_addr": 6
+            }
+        ]
+    }
+}
