@@ -25,23 +25,25 @@ def execute_asm(bytecode, memory_size=1024):
         size = CMD_SIZE[opcode]
         cmd = int.from_bytes(mem_cmd[pc:pc + size], byteorder='little')
         # print(opcode, cmd)
-        if opcode == 10:
+        if opcode == 10: # write
             b = (cmd >> 7) & mask(4)
             c = (cmd >> 11) & mask(21)
             registers[b] = c
-        elif opcode == 37:
+        elif opcode == 37: # read
             b = (cmd >> 7) & mask(25)
             c = (cmd >> 32) & mask(4)
-            print(b, len(mem_data))
             registers[c] = mem_data[b]
-        elif opcode == 83:
+        elif opcode == 83: # write
             b = (cmd >> 7) & mask(4)
             c = (cmd >> 11) & mask(4)
             d = (cmd >> 15) & mask(5)
             addr = registers[b] + d
             mem_data[addr] = registers[c]
-        elif opcode == 111:
-            pass
+        elif opcode == 111: # <=
+            b = (cmd >> 7) & mask(4)
+            c = (cmd >> 11) & mask(4)
+            addr = registers[b]
+            registers[c] = registers[c] <= mem_data[addr]
 
         size = CMD_SIZE[opcode]
         pc += size
@@ -75,6 +77,10 @@ def main():
     parser.add_argument("-r", help="Диапазон пямяти (в формате start-end)", type=str)
     args = parser.parse_args()
     args, ok = mem_validate_args(args)
+
+    if not ok:
+        print("Ошибка при вводе аргументов")
+        return
 
     # Чтение байтовой строки
     with open(args.i, 'rb') as f:
