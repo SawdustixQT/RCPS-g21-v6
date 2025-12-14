@@ -1,0 +1,47 @@
+{
+    "program": {
+        "name": "array_copy",
+        "architecture": "custom",
+        "description": "Копирование массива из 3 элементов с адреса 100 на адрес 200",
+        "instructions": [
+            {
+                "op": "LOAD",
+                "reg_addr": 2,
+                "const": 200
+            },
+            {
+                "op": "READ",
+                "mem_addr": 100,
+                "reg_addr": 10
+            },
+            {
+                "op": "WRITE",
+                "base_reg_addr": 2,
+                "reg_addr": 10,
+                "offset": 0
+            },
+            {
+                "op": "READ",
+                "mem_addr": 101,
+                "reg_addr": 10
+            },
+            {
+                "op": "WRITE",
+                "base_reg_addr": 2,
+                "reg_addr": 10,
+                "offset": 1
+            },
+            {
+                "op": "READ",
+                "mem_addr": 102,
+                "reg_addr": 10
+            },
+            {
+                "op": "WRITE",
+                "base_reg_addr": 2,
+                "reg_addr": 10,
+                "offset": 2
+            }
+        ]
+    }
+}

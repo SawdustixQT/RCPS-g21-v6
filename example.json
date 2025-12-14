@@ -2,30 +2,29 @@
     "program": {
         "name": "",
         "architecture": "x86_64",
-        "os": "",
         "description": "",
         "instructions": [
-		{
-			"op": "LOAD",
-			"reg_addr": 13,
-			"const": 508
-		},
-		{
-			"op": "READ",
-			"mem_addr": 934,
-			"reg_addr": 14
-		},
-		{
-			"op": "WRITE",
-			"base_reg_addr": 13,
-			"reg_addr": 6,
-			"offset": 7
-		},
-		{
-			"op": "BIN_OP",
-			"base_reg_addr": 6,
-			"acc_reg_addr": 4
-		}
-		]
+            {
+                "op": "LOAD",
+                "reg_addr": 13,
+                "const": 508
+            },
+            {
+                "op": "READ",
+                "mem_addr": 934,
+                "reg_addr": 14
+            },
+            {
+                "op": "WRITE",
+                "base_reg_addr": 13,
+                "reg_addr": 6,
+                "offset": 7
+            },
+            {
+                "op": "BIN_OP",
+                "base_reg_addr": 6,
+                "acc_reg_addr": 4
+            }
+        ]
     }
 }
