@@ -1,0 +1,14 @@
+{
+    "program": {
+        "name": "test",
+        "architecture": "",
+        "description": "",
+        "instructions": [
+            {
+                "op": "LOAD",
+                "reg_addr": 13,
+                "const": 508
+            }
+        ]
+    }
+}

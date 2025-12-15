@@ -2,7 +2,6 @@ import json
 import argparse
 import os.path
 
-
 def bin_as_hex(bin_str: bin):
     return  ', '.join(f'0x{byte:02X}' for byte in bin_str)
 
